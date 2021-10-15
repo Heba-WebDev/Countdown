@@ -1,0 +1,266 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap');
+
+
+:root {
+    box-sizing: border-box;
+    --Cyan: hsl(179, 62%, 43%);
+    --Bright-Yellow: hsl(71, 73%, 54%);
+    --Light-Gray: hsl(204, 43%, 93%);
+    --Grayish-Blue: hsl(218, 22%, 67%);
+    --first: #2BB3B1;
+    --second: #4ABEBD;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+   box-sizing: inherit;
+    font-family:Karla;
+    display: flex;
+    justify-content: center;
+    background-color: #EBEBEB;
+    background-color: #EE5E86;
+    padding: 10px;
+    color: white;
+    
+}
+
+
+
+.main {
+    justify-self: flex-end;
+    
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    
+}
+
+.sec1 {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px;
+}
+
+.ball {
+    width: 50px;
+    height: 50px;
+    background-color:#3559BE;
+    border-radius: 50%;
+  
+    
+}
+
+
+.sec2 {
+    padding: 10px;
+   
+}
+
+.title h1{
+    font-size: 35px;
+    margin: 0;
+}
+
+.subtitle p{
+    margin: 0;
+   opacity: 0.6;
+   font-size: 12px;
+   padding-left:17px;
+   letter-spacing: 5px;
+}
+
+
+.img-container .img {
+    max-width: 80%;
+   
+
+}
+
+.sec3 {
+    display: flex;
+    
+    padding: 50px 0;
+    
+ 
+}
+
+.img-container  {
+   justify-self: end;
+   display: flex;
+   justify-content: center;
+   position: relative;
+   
+}
+
+.img-container::before {
+    display: block;
+content: "";
+width: 20px;
+height: 20px;
+position: absolute;
+top: -13px;
+right: 18px;
+border-top: 3px solid white;
+border-right: 3px solid white;
+}
+
+
+
+
+
+.sec4 {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+.days-container, .hours-container, .minutes-container, .seconds-container {
+    display: flex;
+    flex-direction: column;
+   padding: 0.1rem;
+}
+
+
+.day, .hour, .min, .sec {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.stamps {
+    font-size: 10px;
+    font-weight: lighter;
+    opacity: 0.6;
+}
+
+@media (min-width: 900px) {
+
+    body {
+     
+        padding: 0px 15px;
+    }
+   
+    .sec1 {
+        padding: 0;
+        
+    }
+    
+    .sec2 {
+        text-align: center;
+    
+     
+    }
+
+    .sec3 {
+      
+        padding: 20px 0;
+        max-height: 50%;
+    }
+
+    .title h1{
+        font-size: 45px;
+    }
+
+    .subtitle p{
+       font-size: 14px;
+       padding-left:17px;
+       letter-spacing: 5px;
+    }
+
+     .img-container {
+         width: 100%;
+     }
+
+    
+     .img-container::before {
+        display: none;
+    content: "";
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: -40px;
+    right: 300px;
+    border-top: 3px solid white;
+    border-right: 3px solid white;
+    }
+    
+    .ball {
+        width: 30px;
+        height: 30px;
+        background-color:#3559BE;
+        border-radius: 50%;
+        padding: 0;
+        
+    }
+   
+    .sec4 {
+        
+        justify-content: space-around;
+        max-width: 80%;
+        margin: 0 auto;
+       text-align: center;
+     
+    }
+
+    
+.days-container, .hours-container, .minutes-container, .seconds-container {
+   
+    padding: 0 45px;
+    width: 100%;
+} 
+}
+
+/* img {
+    max-width: 100%;
+    height: auto;
+} */
+
+
+
+/* .frame {
+    position: relative;
+    width: 230px;
+   
+   text-align: center;
+} */
+
+
+ /* .frame:before{
+
+display: block;
+content: "";
+width: 20px;
+height: 20px;
+position: absolute;
+top: -5px;
+right: -5px;
+border-top: 3px solid blue;
+border-right: 3px solid blue;
+
+}  */
+
+
+
+/* .frame::after {
+    display: block;
+    content: "";
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    bottom: -8px;
+    left: -10px;
+    border-bottom: 5px solid #912F2C;
+    border-left: 5px solid #912F2C;
+} */
+
+
